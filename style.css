@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Playwrite+HR:wght@100..400&display=swap');
+
+.inter-normal {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    margin: 0 auto;
+    padding: 60px 190px;
+    background-color:black ;
+
+  }
+  .Text-1{
+    font-size: 78px;
+    font-weight: 900;
+    color: #FFFFFF;
+  }
+  .Text-2{
+    font-size: 70px;
+    font-weight: 800;
+    
+  }
+  
+  .Text-3{
+    font-size: 48px;
+    font-weight: 900;
+  }
+  .Text-4{
+    font-size: 36px;
+    font-weight: 800;
+  }
+  .Text-5{
+    font-size: 32px;
+    font-weight: 700; 
+  }
+  .Text-6{
+    font-size: 28px;
+    font-weight: 900;
+  }
+  .Text-7{
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF80;
+  }
+  .Text-8{
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF80;
+  }
+  .Text-9{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 0;
+  }
+  .Text-10{
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 0;
+  }
+  .Color-primary-1{
+    color: #E6533C;
+  }
+  .Color-primary-2{
+    color: #FFFFFF;
+  }
+  .btn-primary{
+    color: #FFFFFF;
+    background-color: #E6533C;
+    padding: 16px 40px;
+    border-radius: 40px;
+    border: none;
+  }
+  .btn-Secondary{
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);;
+    color: #FFFFFF;
+    border-radius: 40px;
+    padding: 16px 40px;
+    background-color: black;
+  }
+  
+  
+/* Nav Style Start  */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#Drop-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+}
+nav ul a {
+  text-decoration:none;
+}
+.btn-1{
+  color: #FFFFFF;
+  background-color: #E6533C;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+/* Nav Style End  */
+
+/* <!-- Banner Section style start  --> */
+
+.Banner{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 60px;
+}
+.BannerText{
+  width: 520px;
+  text-align: justify;
+}
+.Italic{
+  font-family: "Mea Culpa", cursive; 
+  font-weight: 500;
+  font-size: 96px;
+}
+.btnDiv{
+  display: flex;
+  gap:20px;
+}
+
+.ImageDiv{
+  padding-left: 625px;
+  width: 350px;
+  height: 580px;
+  position: relative;
+}
+.Box{
+  box-sizing: border-box;
+  border: 1px solid  rgba(255, 255, 255, 0.1);
+  color: #e5e2e2;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 190px;
+  height: 110px;
+  padding:0px 10px ;
+  border-radius: 15px;
+}
+
+.box-1{
+  position: absolute;
+  top: 110px;
+  left: 866px;
+  text-align: justify;
+}
+.circle{
+  background-color: #E6533C;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  border-radius: 50%;
+  height: 40px;
+}
+.box-2{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 410px;
+  left: 510px;
+}
+/* <!-- Banner Section style End  --> */
+
+
+/* Smaller Responsive style Start */
+@media screen and (max-width:576px) {
+ /* Nav Style Start  */
+
+#Drop-down{
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+/* Nav Style End  */ 
+}
+
