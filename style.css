@@ -88,9 +88,9 @@
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;  
 }
+
 #Drop-down{
     display: flex;
     justify-content: center;
@@ -106,6 +106,13 @@ nav ul a {
   background-color: #E6533C;
   padding: 8px 20px;
   border-radius: 20px;
+}
+.Hamberger-icon{
+  display: none;
+  width: 50px;
+  background-color: #e5e2e2;
+  box-sizing: border-box ;
+  border-radius: 30%;
 }
 /* Nav Style End  */
 
@@ -154,11 +161,21 @@ nav ul a {
   text-align: justify;
 }
 .circle{
+  position: relative;
   background-color: #E6533C;
   box-sizing: border-box;
   padding: 20px 20px;
   border-radius: 50%;
   height: 40px;
+}
+.Tringle img{
+  width: 20px;
+
+}
+.Tringle{
+  position: absolute;
+  top: 10px;
+  left:10px;
 }
 .box-2{
   display: flex;
@@ -169,21 +186,161 @@ nav ul a {
   top: 410px;
   left: 510px;
 }
-/* <!-- Banner Section style End  --> */
+
+/* <!-- Change your habit section style start  --> */
+
+#Habits-Section{
+  text-align: center;
+  color: #ffffff;
+  display: none;
+}
+.Habits-mainDiv{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 50px;
+}
+.Habits-card{
+  width: 250px;
+  text-align: center;
+}
+.Habits-card img{
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+/* <!-- Change your habit section style end  --> */
+
+
+/* <!-- Run Extra Section style Start  --> */
+
+#Run-extra-Section{
+  background-color: #9d9d9d;
+  display: none;
+
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 40px;
+  gap: 380px;
+  border-radius: 20px;
+}
+.Text-Div h1{
+color: #FFFFFF;
+}
+.imgDiv img{
+  border-radius: 20px;
+}
+
+/* <!-- Run Extra Section style end  --> */
+
+/* <!-- Meet Our team section start --> */
+
+.Meet-section{
+  text-align: center;
+  display: none;
+}
+
+.Meet-img-Div{
+  display: grid;
+  grid-template-columns:repeat( 3,1fr);
+}
+.Meet-img img{
+  width: 500px;
+  height: 360px;
+  /* position: relative; */
+}
+.Meet-img{
+  position: relative;
+}
+.Meet-Text{
+  position: absolute;
+  top:280px;
+  right: 400px;
+  text-align: justify;
+}
+/* <!-- Meet Our team section end --> */
+
+/* Fotter section style Start  */
+footer{
+  background-color: #ffffff1a;
+  padding: 40px;
+   display: none;
+}
+#Footer-Section{
+
+  /* display: flex; */
+ 
+  flex-direction: row;
+  gap: 80px;
+  color: #FFFFFF;
+  
+}
+footer hr{
+  border: 2px solid #FFFFFF1A;
+}
+.Rights{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFFFFF80;
+ 
+}
+
+/* Fotter section style end  */
+
+
+
+
+
+
 
 
 /* Smaller Responsive style Start */
 @media screen and (max-width:576px) {
- /* Nav Style Start  */
 
-#Drop-down{
-  display: grid;
+  .inter-normal {
+    margin:auto ; 
+    padding: 0;
+
+  }
+
+ /* Nav Style Start  */
+nav{
+  margin: 20px;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+}
+#Drop-down{
+  display: none;
+}
+.Hamberger-icon{
+  display:flex;
+  justify-content: center;
+  align-items: center;
   
 }
+ 
+/* Banner Section style  */
 
-/* Nav Style End  */ 
+.Banner{
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* width: 352px;
+  padding: 20px; */
+  /* height: 335px; */
+}
+.BannerText h1{
+ font-size: 36px;
+}
+/* .ImageDiv{
+  width: 330px;
+  height: 580px;
+} */
+
 }
 
