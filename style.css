@@ -11,7 +11,7 @@
     margin: 0 auto;
     padding: 60px 190px;
     background-color:black ;
-
+    max-width: 1440px;
   }
   .Text-1{
     font-size: 78px;
@@ -73,6 +73,14 @@
     border-radius: 40px;
     border: none;
   }
+  .btn-primary-2{
+    display: none;
+    color: #FFFFFF;
+    background-color: #E6533C;
+    padding: 16px 40px;
+    border-radius: 40px;
+    border: none;
+  }
   .btn-Secondary{
     box-sizing: border-box;
     border: 1px solid rgb(255, 255, 255);;
@@ -122,6 +130,8 @@ nav ul a {
   display:grid;
   grid-template-columns: repeat(2,1fr);
   gap: 60px;
+  max-width: 1440px;
+  padding-top: 20px;
 }
 .BannerText{
   width: 520px;
@@ -138,11 +148,12 @@ nav ul a {
 }
 
 .ImageDiv{
-  padding-left: 625px;
+  padding-left: 525px;
   width: 350px;
   height: 580px;
   position: relative;
 }
+
 .Box{
   box-sizing: border-box;
   border: 1px solid  rgba(255, 255, 255, 0.1);
@@ -157,8 +168,10 @@ nav ul a {
 .box-1{
   position: absolute;
   top: 110px;
-  left: 866px;
+  left: 760px;
   text-align: justify;
+  padding-left: 30px;
+  background-color: #3030308A;
 }
 .circle{
   position: relative;
@@ -179,12 +192,60 @@ nav ul a {
 }
 .box-2{
   display: flex;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 410px;
-  left: 510px;
+  left: 410px;
+  background-color: #3030308A;
+}
+
+/* Mobile devive style start */
+
+.ImageDiv-2{
+  display: none;
+  padding-left: 525px;
+  width: 350px;
+  height: 580px;
+  position: relative;
+}
+.BannerTexts{
+  width: 350px;
+  text-align: justify;
+  display: none;
+  padding:0px 8px;
+}
+.boxs-1{
+  position: absolute;
+  top: 60px;
+  left: 185px;
+  /* text-align: justify; */
+  padding-left: 40px;
+  background-color: #3030308A;
+}
+.boxs-2{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 280px;
+  left: 10px;
+  background-color: #3030308A;
+}
+.Boxs{
+  box-sizing: border-box;
+  border: 1px solid  rgba(255, 255, 255, 0.1);
+  color: #e5e2e2;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 180px;
+  height: 90px;
+  padding:5px 10px ;
+  border-radius: 15px;
+}
+.Text-9{
+  font-size: 30.24px;
 }
 
 /* <!-- Change your habit section style start  --> */
@@ -192,14 +253,14 @@ nav ul a {
 #Habits-Section{
   text-align: center;
   color: #ffffff;
-  display: none;
+  padding: 100px 0px;
 }
 .Habits-mainDiv{
 display: flex;
 flex-direction: row;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
-gap: 50px;
+gap: 140px;
 }
 .Habits-card{
   width: 250px;
@@ -208,30 +269,44 @@ gap: 50px;
 .Habits-card img{
   box-sizing: border-box;
   border-radius: 50%;
+  width: 272px;
+  height: 255px;
 }
 
+.Text-7{
+  color: #FFFFFF;
+}
 /* <!-- Change your habit section style end  --> */
 
 
 /* <!-- Run Extra Section style Start  --> */
 
 #Run-extra-Section{
-  background-color: #9d9d9d;
-  display: none;
-
-  /* display: flex; */
+  background-color: #222222;
+  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 40px;
-  gap: 380px;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 20px 40px;
+  gap: 280px;
   border-radius: 20px;
 }
 .Text-Div h1{
 color: #FFFFFF;
 }
 .imgDiv img{
+  display: block;
   border-radius: 20px;
+}
+.imgDiv-2 img{
+  display: none;
+}
+.btn-primary-3{
+  color: #FFFFFF;
+  background-color: #E6533C;
+  padding: 15px 60px;
+  border-radius: 30px;
+  border: none;
 }
 
 /* <!-- Run Extra Section style end  --> */
@@ -240,7 +315,6 @@ color: #FFFFFF;
 
 .Meet-section{
   text-align: center;
-  display: none;
 }
 
 .Meet-img-Div{
@@ -308,6 +382,18 @@ footer hr{
 
   }
 
+  .btn-primary-2{
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 16.24px;
+  }
+ 
+  .btn-Secondary{
+    border-radius: 20px;
+    padding: 10px 10px;
+    font-size: 16.24px;
+  }
+
  /* Nav Style Start  */
 nav{
   margin: 20px;
@@ -327,20 +413,78 @@ nav{
 /* Banner Section style  */
 
 .Banner{
-  grid-template-columns: repeat(1, 1fr);
-  justify-content: flex-start;
-  align-items: flex-start;
-  /* width: 352px;
-  padding: 20px; */
-  /* height: 335px; */
+  grid-template-columns: repeat(1,1fr);
+  gap: 10px;
+  padding: 10px;
 }
-.BannerText h1{
+.BannerTexts h1{
  font-size: 36px;
 }
-/* .ImageDiv{
-  width: 330px;
-  height: 580px;
-} */
+.Italic{
+  font-size: 60px;
+}
+.BannerText{
+  display: none;
+}
+.BannerTexts{
+  display: block;
+}
+.btn-primary{
+ display:none;
+}
+.btn-primary-2{
+  display: block;
+}
+.ImageDiv{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.ImageDiv-2{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  /* position: relative; */
+}
+.ImageDiv{
+  display: none;
+  
+}
+
+/* Change your habit section style start  */
+.Habits-mainDiv{
+  flex-direction:column;
+  gap: 30px;
+  }
+.Text-3{
+  font-size: 36px;
+}
+
+/* Run Extra Section style Start */
+
+#Run-extra-Section{
+  margin: 0px 20px;
+  flex-direction: column;
+  padding: 30px 40px;
+  gap: 15px;
+}
+.Text-Div h1{
+color: #FFFFFF;
+}
+.imgDiv img{
+  display: none;
+}
+.imgDiv-2 img{
+  border-radius: 20px;
+  width: 287px;
+  display: block;
+}
+.btn-primary-3{
+  padding: 15px 90px;
+  border-radius: 30px;
+}
+
 
 }
 
