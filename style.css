@@ -145,6 +145,7 @@ nav ul a {
 .btnDiv{
   display: flex;
   gap:20px;
+  padding-top: 30px;
 }
 
 .ImageDiv{
@@ -216,6 +217,7 @@ nav ul a {
   display: none;
   padding:0px 8px;
 }
+
 .boxs-1{
   position: absolute;
   top: 60px;
@@ -287,18 +289,25 @@ gap: 140px;
   flex-direction: row;
   justify-content: space-between;
   /* align-items: center; */
-  padding: 20px 40px;
-  gap: 280px;
+  padding: 30px 40px;
+  gap: 400px;
   border-radius: 20px;
 }
 .Text-Div h1{
 color: #FFFFFF;
+width: 352px;
+line-height: 70px;
+}
+.Text-Div{
+  width: 440px;
+  padding-left: 30px;
 }
 .imgDiv img{
   display: block;
   border-radius: 20px;
+  
 }
-.imgDiv-2 img{
+.imgDiv-2{
   display: none;
 }
 .btn-primary-3{
@@ -315,25 +324,38 @@ color: #FFFFFF;
 
 .Meet-section{
   text-align: center;
+  background-color: #ffffff1a;
+  padding: 15px;
+  margin-top: 40px;
+  border-radius: 20px;
+  line-height: 40px;
 }
+
 
 .Meet-img-Div{
   display: grid;
   grid-template-columns:repeat( 3,1fr);
+  gap: 10px;
 }
 .Meet-img img{
-  width: 500px;
-  height: 360px;
+  width: 450px;
+  height: 370px;
   /* position: relative; */
+  border-radius: 30px;
 }
 .Meet-img{
   position: relative;
+  
 }
 .Meet-Text{
   position: absolute;
-  top:280px;
-  right: 400px;
-  text-align: justify;
+  top:275px;
+  right: 260px;
+  text-align: start;
+  line-height: 10px;
+}
+.Text-7{
+ font-size: 26px;
 }
 /* <!-- Meet Our team section end --> */
 
@@ -466,23 +488,54 @@ nav{
 #Run-extra-Section{
   margin: 0px 20px;
   flex-direction: column;
-  padding: 30px 40px;
+  padding: 20px 30px 20px 20px;
   gap: 15px;
 }
 .Text-Div h1{
 color: #FFFFFF;
 }
+.Text-Div{
+  width: 340px;
+  padding-left: 0px;
+}
 .imgDiv img{
   display: none;
 }
+.imgDiv-2{
+  display: block;
+  
+}
 .imgDiv-2 img{
   border-radius: 20px;
-  width: 287px;
+  width: 310px;
   display: block;
 }
 .btn-primary-3{
   padding: 15px 90px;
   border-radius: 30px;
+}
+
+/* Meet Our team section style start */
+.Meet-section{
+  margin: 20px;
+  line-height: 20px;
+}
+.Meet-img-Div{
+  grid-template-columns:repeat( 1,1fr);
+  padding: 20px;
+}
+.Meet-img img{
+  width: 310px;
+  height: 250px;
+}
+
+.Meet-Text{
+  top:170px;
+  right: 160px;
+  
+}
+.Text-7{
+  font-size: 20px;
 }
 
 
