@@ -406,14 +406,8 @@ form input{
   padding: 15px 325px 10px 20px;
   margin-bottom: 20px;
 }
-.BMI-Calculate-MobileDeviceDiv{
-  display: none;
-}
-
 
 /* BMI Section style End */
-
-
 
 /* <!-- Meet Our team section start --> */
 
@@ -425,7 +419,6 @@ form input{
   border-radius: 20px;
   line-height: 40px;
 }
-
 
 .Meet-img-Div{
   display: grid;
@@ -631,30 +624,51 @@ color: #FFFFFF;
 /* BMI Section style Start */
 
 .BMI-section{
-  margin: 10px;
+  border-radius: 0px;
+  padding-bottom: 0px;
 }
 .BMI-MainDiv{
   flex-direction: column;
   gap: 50px;
   padding: 10px 80px 10px 20px;
+  width: 200;
+  padding-bottom: 0px;
+  
 }
 .BMI-Chart-Div{
 gap: 10px;
 }
 
 .BMI-Calculate-Div{
-  width: 280px;
-  height: 520px;
+  width: 310px;
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap:0px;
+  padding-left: 30px;
 
 }
 form{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+ display: flex;
+ flex-direction: column;
+
 }
+
 form input{
-  width: 130px;
+  width: 100%;
   padding: 12px 8px;
+  box-sizing: border-box;
  
+}
+.Input-firstLine{
+  display: flex;
+  flex-direction: row;
+}
+.SecondLine{
+  display: flex;
+  flex-direction: row;
 }
 #gender,#Activity-factor{
   padding: 15px 60px 10px 20px;
@@ -663,11 +677,13 @@ form input{
 }
 #Activity-factor{
   padding: 15px 145px 10px 20px;
-  width: 250px;
+  width: 100%;
+}
+.btn-primary-3{
+  padding: 15px 60px;
 }
 
 /* BMI Section style End */
-
 
 /* Meet Our team section style start */
 .Meet-section{
@@ -676,20 +692,19 @@ form input{
 }
 .Meet-img-Div{
   grid-template-columns:repeat( 1,1fr);
-  padding: 20px;
+  padding: 50px;
   justify-content: center;
   align-items: center;
-  
+  padding-right: 50px;
+  padding-bottom: 20px;
 }
 .Meet-img img{
-  width: 280px;
-  height: 230px;
+  width: 320px;
+  height: 260px;
 }
-
 .Meet-Text{
   top:170px;
   right: 160px;
-  
 }
 .Text-7{
   font-size: 20px;

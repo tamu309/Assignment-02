@@ -197,17 +197,21 @@
                     <h3 class="Text-6">Calculate your BMI</h3>
                     <p class="Text-8">We believe fitness should be accessible to everyone, everywhere, regardless of <br> income or access to a gym. </p>
                     <form >
-                        <input type="text" placeholder="Height/cm">
+                        <label class="Input-firstLine">
+                            <input type="text" placeholder="Height/cm">
                         <input type="text" placeholder="Weight/kg">
+                        </label>
                         <br>
-                        <input type="text" placeholder="Age">
+                        <label class="SecondLine">
+                            <input type="text" placeholder="Age">
 
-                        <select id="gender" class="Text-8 " name="gender">
-                            <option class="Male" value="Sex">Sex</option>
-                          <option class="Male"  value="Male">Male</option>
-                          <option class="Male" value="female">Female</option>
-                          
-                        </select>
+                            <select id="gender" class="Text-8 " name="gender">
+                                <option class="Male" value="Sex">Sex</option>
+                              <option class="Male"  value="Male">Male</option>
+                              <option class="Male" value="female">Female</option>
+                              
+                            </select>
+                        </label>
                         <br>
                         <select name="Activity-factor" id="Activity-factor"class="Text-8 " >
 
@@ -220,35 +224,7 @@
                     </div>
                 </div>
 
-                <!-- Mobile device Div  -->
-
-                <div class="BMI-Calculate-MobileDeviceDiv ">
-                    <h3 class="Text-6">Calculate your BMI</h3>
-                    <p class="Text-8">We believe fitness should be accessible to everyone, everywhere, regardless of <br> income or access to a gym. </p>
-                    <form >
-                        <input type="text" placeholder="Height/cm">
-                        <input type="text" placeholder="Weight/kg">
-                        <br>
-                        <input type="text" placeholder="Age">
-
-                        <select id="gender" class="Text-8 " name="gender">
-                            <option class="Male" value="Sex">Sex</option>
-                          <option class="Male"  value="Male">Male</option>
-                          <option class="Male" value="female">Female</option>
-                          
-                        </select>
-                        <br>
-                        <select name="Activity-factor" id="Activity-factor"class="Text-8 " >
-
-                            <option value="Select an activity factor">Select an activity factor</option>
-
-                        </select>
-                    </form>
-                    <div>
-                        <button class="btn-primary Text-7">Calculate</button>
-                    </div>
-                </div>
-
+               
 
             </div>
 
