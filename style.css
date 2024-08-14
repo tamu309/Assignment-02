@@ -11,13 +11,6 @@
     margin: 0 auto;
     padding: 60px 190px;
     background-color:black ;
-    
-   
-  }
-  .Body-Main{
-     max-width: 1440px;
-     /* display: grid;
-     justify-content: center; */
   }
   .Text-1{
     font-size: 78px;
@@ -75,6 +68,7 @@
     font-size: 16px;
     color: #FFFFFF;
   }
+  
   .Color-primary-1{
     color: #E6533C;
   }
@@ -85,7 +79,7 @@
   .btn-primary{
     color: #FFFFFF;
     background-color: #E6533C;
-    padding: 16px 40px;
+    padding: 20px 20px;
     border-radius: 40px;
     border: none;
   }
@@ -93,19 +87,25 @@
     display: none;
     color: #FFFFFF;
     background-color: #E6533C;
-    padding: 16px 40px;
+    padding: 16px 60px;
     border-radius: 40px;
     border: none;
   }
   .btn-Secondary{
     box-sizing: border-box;
-    border: 1px solid rgb(255, 255, 255);;
+    border: 1px solid #ffffff;;
     color: #FFFFFF;
     border-radius: 40px;
-    padding: 16px 40px;
+    padding: 20px 30px;
     background-color: black;
   }
-  
+  .btn-primary-3{
+    color: #FFFFFF;
+    background-color: #E6533C;
+    padding: 15px 30px;
+    border-radius: 40px;
+    border: none; 
+  }
   
 /* Nav Style Start  */
 
@@ -145,12 +145,12 @@ nav ul a {
 .Banner{
   display:grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 60px;
+  gap: 100px;
   max-width: 1440px;
   padding-top: 20px;
 }
 .BannerText{
-  width: 520px;
+  width: 540px;
   text-align: justify;
 }
 .Italic{
@@ -278,7 +278,7 @@ display: flex;
 flex-direction: row;
 justify-content: flex-start;
 align-items: center;
-gap: 140px;
+gap: 160px;
 }
 .Habits-card{
   width: 250px;
@@ -304,7 +304,6 @@ gap: 140px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* align-items: center; */
   padding: 30px 40px;
   gap: 400px;
   border-radius: 20px;
@@ -321,7 +320,6 @@ line-height: 70px;
 .imgDiv img{
   display: block;
   border-radius: 20px;
-  
 }
 .imgDiv-2{
   display: none;
@@ -364,12 +362,13 @@ line-height: 70px;
   margin-top: 60px;
   border-radius: 20px;
   padding-bottom: 30px;
+ 
 }
 
 .BMI-MainDiv{
   display: flex;
   flex-direction: row;
-  gap: 300px;
+  gap: 520px;
   padding: 20px 60px;
   justify-content: center;
   align-items: center;
@@ -407,6 +406,10 @@ form input{
   padding: 15px 325px 10px 20px;
   margin-bottom: 20px;
 }
+.BMI-Calculate-MobileDeviceDiv{
+  display: none;
+}
+
 
 /* BMI Section style End */
 
@@ -432,7 +435,6 @@ form input{
 .Meet-img img{
   width: 450px;
   height: 370px;
-  /* position: relative; */
   border-radius: 30px;
 }
 .Meet-img{
@@ -455,9 +457,8 @@ form input{
 
 footer{
  background-color:#ffffff1a; 
- width: 1410px;
- height: auto;
- margin: 88px 0px;
+ max-width: 100vw;
+ margin: 80px 0px;
  padding: 20px;
 }
 .P{
@@ -468,9 +469,10 @@ footer{
   flex-direction: row;
   justify-content:start;
   align-items: start;
-  gap: 300px;
+  gap: 320px;
   color: #FFFFFF;
   padding: 20px;
+  padding-left: 40px;
   
   
 }
@@ -675,10 +677,13 @@ form input{
 .Meet-img-Div{
   grid-template-columns:repeat( 1,1fr);
   padding: 20px;
+  justify-content: center;
+  align-items: center;
+  
 }
 .Meet-img img{
-  width: 310px;
-  height: 250px;
+  width: 280px;
+  height: 230px;
 }
 
 .Meet-Text{
@@ -691,6 +696,7 @@ form input{
 }
 
 /* Fotter section style Start  */
+
 footer{ 
   width:auto;
   height:auto;
